@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a simple Spring Boot application that provides APIs for user registration and weather forecast retrieval. Users can register with their name, email, and password, and then log in to receive a JWT token. Additionally, users can retrieve weather forecasts for specific locations.
+This project is a simple Spring Boot application that provides APIs for user registration and weather forecast retrieval. Users can register with their name, email, and password, and then log in to receive a JWT token, and then users can retrieve weather forecasts for specific locations.
 
 ## Features
 
