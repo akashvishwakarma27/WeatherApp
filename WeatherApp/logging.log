@@ -1,0 +1,259 @@
+2024-04-07T20:00:17.593+05:30  INFO 18684 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : Starting WeatherAppApplication using Java 17.0.7 with PID 18684 (D:\All Placement Assignment\WeatherApp\target\classes started by HP in D:\All Placement Assignment\WeatherApp)
+2024-04-07T20:00:17.597+05:30  INFO 18684 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-04-07T20:00:17.657+05:30  INFO 18684 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-07T20:00:17.657+05:30  INFO 18684 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-07T20:00:18.924+05:30  INFO 18684 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-07T20:00:19.004+05:30  INFO 18684 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2024-04-07T20:00:19.807+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-07T20:00:19.822+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-07T20:00:19.823+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07T20:00:19.904+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-07T20:00:19.905+05:30  INFO 18684 --- [WeatherApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2247 ms
+2024-04-07T20:00:20.100+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-07T20:00:20.193+05:30  INFO 18684 --- [WeatherApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-07T20:00:20.244+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-07T20:00:20.621+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-07T20:00:20.662+05:30  INFO 18684 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-07T20:00:21.170+05:30  INFO 18684 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b333a8e
+2024-04-07T20:00:21.174+05:30  INFO 18684 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-07T20:00:22.434+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-07T20:00:22.536+05:30  INFO 18684 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:00:22.553+05:30  WARN 18684 --- [WeatherApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.WeatherApp.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-04-07T20:00:22.554+05:30  INFO 18684 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:00:22.559+05:30  INFO 18684 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-07T20:00:22.570+05:30  INFO 18684 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-07T20:00:22.572+05:30  INFO 18684 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-07T20:00:22.589+05:30  INFO 18684 --- [WeatherApp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07T20:00:22.621+05:30 ERROR 18684 --- [WeatherApp] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.WeatherApp.controller.UserController required a bean of type 'com.WeatherApp.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.WeatherApp.service.UserService' in your configuration.
+
+2024-04-07T20:01:53.226+05:30  INFO 11424 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : Starting WeatherAppApplication using Java 17.0.7 with PID 11424 (D:\All Placement Assignment\WeatherApp\target\classes started by HP in D:\All Placement Assignment\WeatherApp)
+2024-04-07T20:01:53.232+05:30  INFO 11424 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-04-07T20:01:53.310+05:30  INFO 11424 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-07T20:01:53.311+05:30  INFO 11424 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-07T20:01:54.326+05:30  INFO 11424 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-07T20:01:54.387+05:30  INFO 11424 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2024-04-07T20:01:55.011+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-07T20:01:55.028+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-07T20:01:55.028+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07T20:01:55.113+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-07T20:01:55.113+05:30  INFO 11424 --- [WeatherApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1802 ms
+2024-04-07T20:01:55.285+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-07T20:01:55.334+05:30  INFO 11424 --- [WeatherApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-07T20:01:55.368+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-07T20:01:55.594+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-07T20:01:55.619+05:30  INFO 11424 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-07T20:01:55.924+05:30  INFO 11424 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73b7d653
+2024-04-07T20:01:55.926+05:30  INFO 11424 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-07T20:01:56.764+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-07T20:01:56.808+05:30  INFO 11424 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:01:56.822+05:30  WARN 11424 --- [WeatherApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.WeatherApp.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-04-07T20:01:56.823+05:30  INFO 11424 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:01:56.827+05:30  INFO 11424 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-07T20:01:56.837+05:30  INFO 11424 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-07T20:01:56.838+05:30  INFO 11424 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-07T20:01:56.854+05:30  INFO 11424 --- [WeatherApp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07T20:01:56.881+05:30 ERROR 11424 --- [WeatherApp] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.WeatherApp.controller.UserController required a bean of type 'com.WeatherApp.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.WeatherApp.service.UserService' in your configuration.
+
+2024-04-07T20:03:57.910+05:30  INFO 19816 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : Starting WeatherAppApplication using Java 17.0.7 with PID 19816 (D:\All Placement Assignment\WeatherApp\target\classes started by HP in D:\All Placement Assignment\WeatherApp)
+2024-04-07T20:03:57.914+05:30  INFO 19816 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-04-07T20:03:58.006+05:30  INFO 19816 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-07T20:03:58.006+05:30  INFO 19816 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-07T20:03:59.093+05:30  INFO 19816 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-07T20:03:59.188+05:30  INFO 19816 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-04-07T20:03:59.841+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-07T20:03:59.861+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-07T20:03:59.862+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07T20:03:59.954+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-07T20:03:59.955+05:30  INFO 19816 --- [WeatherApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1946 ms
+2024-04-07T20:04:00.136+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-07T20:04:00.192+05:30  INFO 19816 --- [WeatherApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-07T20:04:00.232+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-07T20:04:00.464+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-07T20:04:00.497+05:30  INFO 19816 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-07T20:04:00.813+05:30  INFO 19816 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61e006fe
+2024-04-07T20:04:00.816+05:30  INFO 19816 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-07T20:04:01.733+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-07T20:04:01.777+05:30  INFO 19816 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:04:01.794+05:30  WARN 19816 --- [WeatherApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.WeatherApp.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-04-07T20:04:01.794+05:30  INFO 19816 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:04:01.799+05:30  INFO 19816 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-07T20:04:01.808+05:30  INFO 19816 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-07T20:04:01.810+05:30  INFO 19816 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-07T20:04:01.826+05:30  INFO 19816 --- [WeatherApp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07T20:04:01.859+05:30 ERROR 19816 --- [WeatherApp] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.WeatherApp.controller.UserController required a bean of type 'com.WeatherApp.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.WeatherApp.service.UserService' in your configuration.
+
+2024-04-07T20:05:13.692+05:30  INFO 17508 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : Starting WeatherAppApplication using Java 17.0.7 with PID 17508 (D:\All Placement Assignment\WeatherApp\target\classes started by HP in D:\All Placement Assignment\WeatherApp)
+2024-04-07T20:05:13.695+05:30  INFO 17508 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-04-07T20:05:13.784+05:30  INFO 17508 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-07T20:05:13.785+05:30  INFO 17508 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-07T20:05:14.737+05:30  INFO 17508 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-07T20:05:14.799+05:30  INFO 17508 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2024-04-07T20:05:15.511+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-07T20:05:15.522+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-07T20:05:15.522+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07T20:05:15.596+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-07T20:05:15.596+05:30  INFO 17508 --- [WeatherApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1810 ms
+2024-04-07T20:05:15.753+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-07T20:05:15.800+05:30  INFO 17508 --- [WeatherApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-07T20:05:15.831+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-07T20:05:16.019+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-07T20:05:16.045+05:30  INFO 17508 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-07T20:05:16.344+05:30  INFO 17508 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63e6a84c
+2024-04-07T20:05:16.347+05:30  INFO 17508 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-07T20:05:17.209+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-07T20:05:17.276+05:30  INFO 17508 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:05:17.295+05:30  WARN 17508 --- [WeatherApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.WeatherApp.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-04-07T20:05:17.296+05:30  INFO 17508 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:05:17.303+05:30  INFO 17508 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-07T20:05:17.321+05:30  INFO 17508 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-07T20:05:17.323+05:30  INFO 17508 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-07T20:05:17.336+05:30  INFO 17508 --- [WeatherApp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07T20:05:17.361+05:30 ERROR 17508 --- [WeatherApp] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.WeatherApp.controller.UserController required a bean of type 'com.WeatherApp.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.WeatherApp.service.UserService' in your configuration.
+
+2024-04-07T20:07:11.307+05:30  INFO 18476 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : Starting WeatherAppApplication using Java 17.0.7 with PID 18476 (D:\All Placement Assignment\WeatherApp\target\classes started by HP in D:\All Placement Assignment\WeatherApp)
+2024-04-07T20:07:11.311+05:30  INFO 18476 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-04-07T20:07:11.384+05:30  INFO 18476 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-07T20:07:11.384+05:30  INFO 18476 --- [WeatherApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-07T20:07:12.287+05:30  INFO 18476 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-07T20:07:12.355+05:30  INFO 18476 --- [WeatherApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2024-04-07T20:07:13.140+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-07T20:07:13.156+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-07T20:07:13.157+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07T20:07:13.236+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-07T20:07:13.237+05:30  INFO 18476 --- [WeatherApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1852 ms
+2024-04-07T20:07:13.431+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-07T20:07:13.524+05:30  INFO 18476 --- [WeatherApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-07T20:07:13.574+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-07T20:07:13.844+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-07T20:07:13.883+05:30  INFO 18476 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-07T20:07:14.275+05:30  INFO 18476 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@383dc8d2
+2024-04-07T20:07:14.277+05:30  INFO 18476 --- [WeatherApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-07T20:07:15.332+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-07T20:07:15.384+05:30  INFO 18476 --- [WeatherApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:07:15.831+05:30  WARN 18476 --- [WeatherApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-07T20:07:16.159+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@263618bb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c627b6d, org.springframework.security.web.context.SecurityContextHolderFilter@1aaca582, org.springframework.security.web.header.HeaderWriterFilter@240ede87, org.springframework.web.filter.CorsFilter@12359ca4, org.springframework.security.web.authentication.logout.LogoutFilter@747237ca, com.WeatherApp.config.JwtTokenValidatorFilter@42ed1995, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@28e24199, com.WeatherApp.config.JwtTokenGeneratorFilter@548822b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61fe4048, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@249fa22c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bbe925c, org.springframework.security.web.session.SessionManagementFilter@7365deae, org.springframework.security.web.access.ExceptionTranslationFilter@720f0041, org.springframework.security.web.access.intercept.AuthorizationFilter@6cc68b4f]
+2024-04-07T20:07:16.436+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-07T20:07:16.492+05:30  INFO 18476 --- [WeatherApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-07T20:07:16.507+05:30  INFO 18476 --- [WeatherApp] [restartedMain] com.WeatherApp.WeatherAppApplication     : Started WeatherAppApplication in 5.788 seconds (process running for 6.649)
+2024-04-07T20:07:20.838+05:30  INFO 18476 --- [WeatherApp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07T20:07:20.839+05:30  INFO 18476 --- [WeatherApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-07T20:07:20.840+05:30  INFO 18476 --- [WeatherApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-07T20:07:20.859+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2024-04-07T20:07:20.870+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:20.872+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2024-04-07T20:07:20.955+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2024-04-07T20:07:20.956+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:20.957+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2024-04-07T20:07:21.668+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2024-04-07T20:07:21.670+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:21.672+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2024-04-07T20:07:21.784+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2024-04-07T20:07:21.787+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:21.788+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2024-04-07T20:07:22.183+05:30  INFO 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 362 ms
+2024-04-07T20:07:32.943+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /Location/summary?city=Sagar
+2024-04-07T20:07:32.944+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:32.947+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-04-07T20:07:32.947+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5b0c75
+2024-04-07T20:07:32.960+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error?city=Sagar
+2024-04-07T20:07:32.960+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:32.960+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-04-07T20:07:32.963+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@5b0c75
+2024-04-07T20:07:36.293+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2024-04-07T20:07:36.293+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:36.294+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2024-04-07T20:07:36.340+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2024-04-07T20:07:36.341+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:36.342+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2024-04-07T20:07:36.578+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2024-04-07T20:07:36.580+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:36.580+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2024-04-07T20:07:36.733+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2024-04-07T20:07:36.734+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-04-07T20:07:36.735+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2024-04-07T20:08:00.861+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /users/signin
+2024-04-07T20:08:01.317+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-04-07T20:08:01.317+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.s.w.a.www.BasicAuthenticationFilter  : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=a@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[USER]]
+2024-04-07T20:08:01.353+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2024-04-07T20:08:01.353+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-04-07T20:08:01.353+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-04-07T20:08:25.646+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /Location/summary?city=Sagar
+2024-04-07T20:08:25.697+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /Location/summary?city=Sagar
+2024-04-07T20:08:40.549+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /Location/hourly?city=Sagar
+2024-04-07T20:08:40.552+05:30 DEBUG 18476 --- [WeatherApp] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /Location/hourly?city=Sagar
+2024-04-07T20:09:36.677+05:30  INFO 18476 --- [WeatherApp] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-07T20:09:36.703+05:30  INFO 18476 --- [WeatherApp] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-07T20:09:36.710+05:30  INFO 18476 --- [WeatherApp] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-07T20:09:36.730+05:30  INFO 18476 --- [WeatherApp] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
