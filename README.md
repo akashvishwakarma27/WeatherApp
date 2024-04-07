@@ -1,6 +1,6 @@
 # WeatherApp
 
-# Project: User Registration and Weather Forecast API
+# Weather Forecast API with User Registration
 
 ## Description
 
