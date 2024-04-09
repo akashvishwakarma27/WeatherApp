@@ -66,15 +66,15 @@ This project is a simple Spring Boot application that provides APIs for user reg
 
 ![Home](https://github.com/akashvishwakarma27/WeatherApp/blob/main/WeatherApp/src/main/resources/static/home.png)
 
-## Register
+## Register New User
 
 ![Register](https://github.com/akashvishwakarma27/WeatherApp/blob/main/WeatherApp/src/main/resources/static/register.png)
 
-## Summary
+## Location Summary
 
 ![Location Summary](https://github.com/akashvishwakarma27/WeatherApp/blob/main/WeatherApp/src/main/resources/static/summary.png)
 
-## Hourly Data
+## Location Hourly Data
 
 ![Location Hourly Data](https://github.com/akashvishwakarma27/WeatherApp/blob/main/WeatherApp/src/main/resources/static/hourly.png)
 
