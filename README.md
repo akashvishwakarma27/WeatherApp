@@ -60,6 +60,24 @@ This project is a simple Spring Boot application that provides APIs for user reg
    - Parameters: `city` - The name of the city for which weather forecast is requested.
    - Response: Returns weather forecast data for the specified location.
 
+## ScreenShot
+
+## Home
+
+![Home](image_url)
+
+## Register
+
+![Register](image_url)
+
+## Summary
+
+![Location Summary](image_url)
+
+## Hourly Data
+
+![Location Hourly Data](image_url)
+
 ## Contact
 
 For any inquiries or issues, please contact akashvish4masai@gmail.com.
